@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Doctor Digital</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="label_email">E-mail</string>
     <string name="label_login">Login</string>
@@ -10,8 +8,16 @@
     <string name="label_name">Name</string>
     <string name="label_password">Password</string>
 
+    <string name="onboarding_button_next">Next</string>
+    <string name="onboarding_button_skip">Skip</string>
+    <string name="onboarding_button_get_started">Get Started</string>
+    <string name="onboarding_title_step_1">Find Trusted Doctors</string>
+    <string name="onboarding_title_step_2">Choose Best Doctors</string>
+    <string name="onboarding_title_step_3">Easy Appointments</string>
+    <string name="onboarding_description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.</string>
+
     <string name="sign_in_title">Welcome back</string>
-    <string name="sign_in_subtitle">You can search c ourse, apply course and find scholarship for abroad studies</string>
+    <string name="sign_in_subtitle">You can search course, apply course and find scholarship for abroad studies</string>
     <string name="sign_in_hint_password">Password</string>
     <string name="button_forgot_password">Forgot password</string>
     <string name="dont_have_an_account_button">Don’t have an account? Join us</string>
@@ -25,4 +31,10 @@
     <string name="forgot_password_description">Enter your email for the verification proccesss, we will send 4 digits code to your email.</string>
     <string name="forgot_password_continue">Continue</string>
 
+    <string name="reset_password_title">Reset Password</string>
+    <string name="reset_password_description">Set the new password for your account so you can login and access all the features.</string>
+    <string name="reset_password_new_pass_hint">New Password</string>
+    <string name="reset_password_reenter_new_pass_hint">Re-enter Password</string>
+    <string name="reset_password_update_password">Update Password</string>
+    <string name="book_now_button">Book Now</string>
 </resources>

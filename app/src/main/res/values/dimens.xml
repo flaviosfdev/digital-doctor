@@ -6,8 +6,11 @@
     <dimen name="eight_dips">8dp</dimen>
     <dimen name="twelve_dips">12dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
+    <dimen name="twenty_four_dips">24dp</dimen>
     <dimen name="thirty_two_dips">32dp</dimen>
     <dimen name="forty_eight_dips">48dp</dimen>
+    <dimen name="fifty_six_dips">56dp</dimen>
+    <dimen name="sixty_four_dips">64dp</dimen>
     <dimen name="seventy_two_dips">72dp</dimen>
     <dimen name="eighty_four_dips">84dp</dimen>
     <dimen name="ninety_six_dips">96dp</dimen>
