@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/sixteen_dips"
-        tools:context=".SignUpFragment">
+        tools:context=".ui.auth.fragment.SignUpFragment">
 
         <TextView
             android:id="@+id/title_sign_up"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/AppTheme.Title.Large"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
             android:layout_marginTop="96dp"
@@ -127,12 +127,9 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/sign_up_button"
-            android:layout_width="@dimen/zero_dips"
-            android:layout_height="wrap_content"
+            style="@style/AppTheme.Button.Large.Green"
             android:layout_marginTop="@dimen/sixteen_dips"
             android:text="@string/sign_up"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/use_terms_check_box" />

@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signInFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/signInFragment"
-        android:name="com.flaviosf.digitaldoctor.SignInFragment"
-        android:label="SignInFragment"
-        tools:layout="@layout/fragment_sign_in">
+        android:id="@+id/loginFragment"
+        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.LoginFragment"
+        android:label="loginFragment"
+        tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_signInFragment_to_signUpFragment"
+            android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.flaviosf.digitaldoctor.SignUpFragment"
-        android:label="SignUpFragment"
+        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.SignUpFragment"
+        android:label="signUpFragment"
         tools:layout="@layout/fragment_sign_up" />
 
 </navigation>
