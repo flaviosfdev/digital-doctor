@@ -3,23 +3,22 @@ package com.flaviosf.digitaldoctor.ui.auth
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.navigation.fragment.NavHostFragment
 import com.flaviosf.digitaldoctor.R
-import com.flaviosf.digitaldoctor.ui.auth.fragment.SignUpFragment
+import com.flaviosf.digitaldoctor.ui.auth.fragment.AuthStepSignUpFragment
 import com.flaviosf.digitaldoctor.ui.search.doctor.SearchDoctorActivity
 
-class LoginActivity : AppCompatActivity(), ILoginCallbacks {
+class AuthActivity : AppCompatActivity(), IAuthCallbacks {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_auth)
         supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
     }
 
     override fun goToSignUpFragment() {
         supportFragmentManager.commit {
-            replace(R.id.nav_host_fragment, SignUpFragment())
+            replace(R.id.nav_host_fragment, AuthStepSignUpFragment())
             addToBackStack("signup_stack")
         }
     }

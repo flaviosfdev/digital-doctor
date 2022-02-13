@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.flaviosf.digitaldoctor.data.DataResult
 import com.flaviosf.digitaldoctor.data.ServiceAPI
 
-class LoginViewModel(
+class AuthStepLoginViewModel(
     private val serviceAPI: ServiceAPI = ServiceAPI.instance
 ): ViewModel() {
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_application"
-    tools:context=".ui.search.doctor.steps.DoctorsListFragment">
+    tools:context=".ui.search.doctor.fragment.SearchDoctorStepListFragment">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/search_doctor_input_layout"
@@ -45,7 +45,7 @@
         android:layout_marginTop="@dimen/twenty_four_dips"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="5"
-        tools:listitem="@layout/item_search_doctor"
+        tools:listitem="@layout/item_search_doctor_list"
         app:layout_constraintTop_toBottomOf="@id/search_doctor_input_layout"/>
 
     <ImageView

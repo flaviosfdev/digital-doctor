@@ -1,4 +1,4 @@
-package com.flaviosf.digitaldoctor.ui
+package com.flaviosf.digitaldoctor.ui.splash_screen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

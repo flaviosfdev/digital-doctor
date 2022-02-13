@@ -1,4 +1,4 @@
-package com.flaviosf.digitaldoctor.ui.search.doctor
+package com.flaviosf.digitaldoctor.data
 
 import com.flaviosf.digitaldoctor.model.Doctor
 

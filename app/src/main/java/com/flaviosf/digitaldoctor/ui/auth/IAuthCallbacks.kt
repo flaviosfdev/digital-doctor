@@ -1,6 +1,6 @@
 package com.flaviosf.digitaldoctor.ui.auth
 
-interface ILoginCallbacks {
+interface IAuthCallbacks {
 
     fun goToSignUpFragment()
     fun goToLoginFragment()

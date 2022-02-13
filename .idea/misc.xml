@@ -21,6 +21,7 @@
         <entry key="app/src/main/res/layout/fragment_dialog_forgot_password.xml" value="0.175" />
         <entry key="app/src/main/res/layout/fragment_dialog_reset_password.xml" value="0.175" />
         <entry key="app/src/main/res/layout/fragment_doctors_list.xml" value="0.2740740740740741" />
+        <entry key="app/src/main/res/layout/fragment_doctors_list_step.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_forgot_password_dialog.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_onboarding_step1.xml" value="0.17927927927927928" />
@@ -28,8 +29,11 @@
         <entry key="app/src/main/res/layout/fragment_onboarding_step3.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.25555555555555554" />
         <entry key="app/src/main/res/layout/fragment_reset_password_dialog.xml" value="0.27685185185185185" />
+        <entry key="app/src/main/res/layout/fragment_search_doctor_step_list.xml" value="0.3151111111111111" />
         <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.28055555555555556" />
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/layout/fragment_step_login.xml" value="0.3193693693693694" />
+        <entry key="app/src/main/res/layout/fragment_step_sign_up.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/item_search_doctor.xml" value="0.2740740740740741" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1927927927927928" />
       </map>

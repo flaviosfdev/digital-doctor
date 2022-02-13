@@ -1,28 +1,24 @@
-package com.flaviosf.digitaldoctor.ui.search.doctor.steps
+package com.flaviosf.digitaldoctor.ui.search.doctor.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.view.isVisible
-import androidx.core.widget.addTextChangedListener
 import androidx.core.widget.doAfterTextChanged
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.flaviosf.digitaldoctor.R
-import com.flaviosf.digitaldoctor.ui.search.doctor.MockDoctors
-import com.flaviosf.digitaldoctor.ui.search.doctor.adapter.SearchDoctorAdapter
+import com.flaviosf.digitaldoctor.data.MockDoctors
+import com.flaviosf.digitaldoctor.ui.search.doctor.adapter.SearchDoctorStepListAdapter
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
-class DoctorsListFragment : Fragment(R.layout.fragment_doctors_list) {
+class SearchDoctorStepListFragment : Fragment(R.layout.fragment_search_doctor_step_list) {
 
     private lateinit var recycler: RecyclerView
     private lateinit var searchDoctorEditText: TextInputEditText
     private lateinit var searchDoctorLayout: TextInputLayout
-    private lateinit var adapter: SearchDoctorAdapter
+    private lateinit var adapter: SearchDoctorStepListAdapter
     private lateinit var noResultFoundImage: ImageView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -32,7 +28,7 @@ class DoctorsListFragment : Fragment(R.layout.fragment_doctors_list) {
         noResultFoundImage = view.findViewById(R.id.no_result_found_image)
 
         val doctors = MockDoctors.getDoctors()
-        adapter = SearchDoctorAdapter(doctors)
+        adapter = SearchDoctorStepListAdapter(doctors)
 
         searchDoctorEditText = view.findViewById(R.id.search_doctor_edit_text)
         recycler = view.findViewById(R.id.search_doctor_recycler)

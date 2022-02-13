@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.flaviosf.digitaldoctor.R
-import com.flaviosf.digitaldoctor.ui.auth.LoginActivity
+import com.flaviosf.digitaldoctor.ui.auth.AuthActivity
 import com.flaviosf.digitaldoctor.ui.onboarding.fragment.OnboardingStep1Fragment
 import com.flaviosf.digitaldoctor.ui.onboarding.fragment.OnboardingStep2Fragment
 import com.flaviosf.digitaldoctor.ui.onboarding.fragment.OnboardingStep3Fragment
@@ -38,7 +38,7 @@ class OnboardingActivity : AppCompatActivity() {
 
         onboardingNextButton.setOnClickListener {
             if (onboardingNextButton.text.toString() == getString(R.string.onboarding_button_get_started)) {
-                val intent = Intent(this, LoginActivity::class.java)
+                val intent = Intent(this, AuthActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

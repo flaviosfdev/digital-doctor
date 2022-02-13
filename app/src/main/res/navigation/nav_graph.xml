@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.LoginFragment"
+        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.AuthStepLoginFragment"
         android:label="loginFragment"
-        tools:layout="@layout/fragment_login">
+        tools:layout="@layout/fragment_auth_step_login">
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
@@ -17,8 +17,8 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.SignUpFragment"
+        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.AuthStepSignUpFragment"
         android:label="signUpFragment"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_auth_step_sign_up" />
 
 </navigation>

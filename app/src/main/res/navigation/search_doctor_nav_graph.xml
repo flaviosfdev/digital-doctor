@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/doctorsListFragment"
-        android:name="com.flaviosf.digitaldoctor.ui.search.doctor.steps.DoctorsListFragment"
+        android:name="com.flaviosf.digitaldoctor.ui.search.doctor.fragment.SearchDoctorStepListFragment"
         android:label="fragment_doctors_list"
-        tools:layout="@layout/fragment_doctors_list" />
+        tools:layout="@layout/fragment_search_doctor_step_list" />
 </navigation>

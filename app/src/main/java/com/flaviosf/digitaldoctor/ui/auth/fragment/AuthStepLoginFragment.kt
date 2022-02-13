@@ -2,9 +2,7 @@ package com.flaviosf.digitaldoctor.ui.auth.fragment
 
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -13,16 +11,16 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.flaviosf.digitaldoctor.R
 import com.flaviosf.digitaldoctor.data.DataResult
-import com.flaviosf.digitaldoctor.ui.auth.ILoginCallbacks
-import com.flaviosf.digitaldoctor.ui.auth.dialog.DialogForgotPasswordFragment
-import com.flaviosf.digitaldoctor.ui.auth.viewmodel.LoginViewModel
+import com.flaviosf.digitaldoctor.ui.auth.IAuthCallbacks
+import com.flaviosf.digitaldoctor.ui.auth.fragment.dialog.AuthDialogForgotPasswordFragment
+import com.flaviosf.digitaldoctor.ui.auth.viewmodel.AuthStepLoginViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 
-class LoginFragment : Fragment() {
-    private lateinit var callback: ILoginCallbacks
-    private val viewModel: LoginViewModel by viewModels()
-    private val dialog = DialogForgotPasswordFragment()
+class AuthStepLoginFragment : Fragment(R.layout.fragment_auth_step_login) {
+    private lateinit var callback: IAuthCallbacks
+    private val viewModelAuthStep: AuthStepLoginViewModel by viewModels()
+    private val dialog = AuthDialogForgotPasswordFragment()
 
     private lateinit var email: TextInputEditText
     private lateinit var password: TextInputEditText
@@ -31,16 +29,10 @@ class LoginFragment : Fragment() {
     private lateinit var forgotPasswordButton: MaterialButton
     private lateinit var signUpButton: MaterialButton
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.fragment_login, container, false)
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        when(context) {
-            !is ILoginCallbacks -> {
+        when (context) {
+            !is IAuthCallbacks -> {
                 throw RuntimeException("Interface ILoginCallbacks não foi implementada em LoginActivity")
             }
             else -> callback = context
@@ -59,7 +51,7 @@ class LoginFragment : Fragment() {
 
         Glide.with(progressBar)
             .load(R.drawable.logo_animated)
-            .apply(RequestOptions().override(72,72))
+            .apply(RequestOptions().override(72, 72))
             .into(progressBar)
 
         loginButton.setOnClickListener {
@@ -74,7 +66,7 @@ class LoginFragment : Fragment() {
         }
 
         forgotPasswordButton.setOnClickListener {
-            dialog.show(parentFragmentManager, DialogForgotPasswordFragment.FORGOT_PASS_TAG )
+            dialog.show(parentFragmentManager, AuthDialogForgotPasswordFragment.FORGOT_PASS_TAG)
         }
 
         signUpButton.setOnClickListener {
@@ -83,7 +75,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun signIn(email: String, password: String) {
-        viewModel.signIn(email, password).observe(this) {
+        viewModelAuthStep.signIn(email, password).observe(this) {
             when (it) {
                 is DataResult.Loading -> {}
                 is DataResult.Success -> {

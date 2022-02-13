@@ -1,20 +1,19 @@
 package com.flaviosf.digitaldoctor.ui.search.doctor.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.flaviosf.digitaldoctor.R
-import com.flaviosf.digitaldoctor.databinding.ItemSearchDoctorBinding
+import com.flaviosf.digitaldoctor.databinding.ItemSearchDoctorListBinding
 import com.flaviosf.digitaldoctor.model.Doctor
 
-class SearchDoctorAdapter(private var _doctors: List<Doctor>) :
+class SearchDoctorStepListAdapter(private var _doctors: List<Doctor>) :
     RecyclerView.Adapter<SearchDoctorViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchDoctorViewHolder {
         val binding =
-            ItemSearchDoctorBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemSearchDoctorListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SearchDoctorViewHolder(binding)
     }
 
@@ -31,7 +30,7 @@ class SearchDoctorAdapter(private var _doctors: List<Doctor>) :
 
 }
 
-class SearchDoctorViewHolder(private val binding: ItemSearchDoctorBinding) :
+class SearchDoctorViewHolder(private val binding: ItemSearchDoctorListBinding) :
     RecyclerView.ViewHolder(binding.root) {
 
     fun bind(doctor: Doctor) {
