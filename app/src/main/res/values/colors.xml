@@ -17,6 +17,7 @@
     <color name="red">#FF0000</color>
     <color name="yellow">#F6D060</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="shadow_card">#32000000</color>
 
 
 </resources>

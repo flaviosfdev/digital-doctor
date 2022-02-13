@@ -63,12 +63,14 @@ class LoginFragment : Fragment() {
             .into(progressBar)
 
         loginButton.setOnClickListener {
-            loginButton.visibility = View.INVISIBLE
-            progressBar.visibility = View.VISIBLE
-            signIn(
-                email = email.text.toString(),
-                password = password.text.toString()
-            )
+//            loginButton.visibility = View.INVISIBLE
+//            progressBar.visibility = View.VISIBLE
+//            signIn(
+//                email = email.text.toString(),
+//                password = password.text.toString()
+//            )
+
+            callback.goToSearchDoctorActivity()
         }
 
         forgotPasswordButton.setOnClickListener {

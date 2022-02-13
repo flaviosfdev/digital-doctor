@@ -4,4 +4,5 @@ interface ILoginCallbacks {
 
     fun goToSignUpFragment()
     fun goToLoginFragment()
+    fun goToSearchDoctorActivity()
 }

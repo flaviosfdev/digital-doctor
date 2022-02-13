@@ -37,4 +37,9 @@
     <string name="reset_password_reenter_new_pass_hint">Re-enter Password</string>
     <string name="reset_password_update_password">Update Password</string>
     <string name="book_now_button">Book Now</string>
+
+    <string name="search_hint">Search</string>
+
+    <string name="label_no_result_found">No Result Found</string>
+
 </resources>
