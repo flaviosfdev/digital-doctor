@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/sixteen_dips"
+    android:layout_marginEnd="@dimen/sixteen_dips"
+    android:layout_marginBottom="@dimen/sixteen_dips"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/four_dips"
+    android:outlineSpotShadowColor="@color/shadow_card"
+    app:cardElevation="@dimen/eight_dips">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,67 +23,79 @@
             android:layout_height="@dimen/ninety_six_dips"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/item_doctor_favorite"
-            android:layout_width="@dimen/thirty_two_dips"
-            android:layout_height="@dimen/thirty_two_dips"
-            android:background="@drawable/ic_favorite_border"
+            android:layout_width="@dimen/twenty_four_dips"
+            android:layout_height="@dimen/twenty_four_dips"
+            android:src="@drawable/ic_favorite_border"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/item_doctor_name"
-            style="@style/AppTheme.Title.Large"
+            style="@style/AppTheme.Title.Medium"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@id/item_doctor_photo"
-            app:layout_constraintEnd_toStartOf="@id/item_doctor_favorite"
             android:layout_marginStart="@dimen/sixteen_dips"
             android:layout_marginEnd="@dimen/eight_dips"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@id/item_doctor_favorite"
+            app:layout_constraintStart_toEndOf="@id/item_doctor_photo"
             app:layout_constraintTop_toTopOf="@id/item_doctor_photo"
-            tools:text="Dr. Shruti Kedia"/>
+            app:layout_constraintBottom_toTopOf="@id/item_doctor_specialty"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="Dr. Shruti Kedia" />
 
         <TextView
-            android:id="@+id/item_doctor_subtitle"
+            android:id="@+id/item_doctor_specialty"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/four_dips"
             android:textColor="@color/green"
+            android:maxLines="1"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="@id/item_doctor_name"
             app:layout_constraintStart_toStartOf="@id/item_doctor_name"
             app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
-            tools:text="Tooths Dentist"/>
+            app:layout_constraintBottom_toTopOf="@id/item_doctor_experience"
+            tools:text="Tooths Dentist" />
 
         <TextView
             android:id="@+id/item_doctor_experience"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/four_dips"
-            app:layout_constraintEnd_toEndOf="@id/item_doctor_subtitle"
-            app:layout_constraintStart_toStartOf="@id/item_doctor_subtitle"
-            app:layout_constraintTop_toBottomOf="@id/item_doctor_subtitle"
-            tools:text="7 Years experience"/>
+            app:layout_constraintEnd_toEndOf="@id/item_doctor_specialty"
+            app:layout_constraintStart_toStartOf="@id/item_doctor_specialty"
+            app:layout_constraintTop_toBottomOf="@id/item_doctor_specialty"
+            app:layout_constraintBottom_toTopOf="@id/item_doctor_percent"
+            tools:text="7 Years experience" />
 
         <TextView
             android:id="@+id/item_doctor_percent"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/four_dips"
-            app:layout_constraintStart_toStartOf="@id/item_doctor_experience"
+            android:text="87%"
             app:layout_constraintBottom_toBottomOf="@id/item_doctor_photo"
-            tools:text="87%"/>
+            app:layout_constraintTop_toBottomOf="@id/item_doctor_experience"
+            app:layout_constraintStart_toStartOf="@id/item_doctor_experience"
+            tools:text="87%" />
 
         <TextView
             android:id="@+id/item_doctor_patients"
             android:layout_width="@dimen/zero_dips"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/four_dips"
             android:layout_marginStart="@dimen/sixteen_dips"
+            android:layout_marginTop="@dimen/four_dips"
+            android:text="69 Patient Stories"
+            app:layout_constraintBottom_toBottomOf="@id/item_doctor_percent"
+            app:layout_constraintTop_toTopOf="@id/item_doctor_percent"
             app:layout_constraintStart_toEndOf="@id/item_doctor_percent"
-            app:layout_constraintBottom_toBottomOf="@id/item_doctor_photo"
-            tools:text="69 Patient Stories"/>
+            tools:text="69 Patient Stories" />
 
         <Space
             android:id="@+id/spacer"
@@ -86,20 +105,22 @@
 
         <TextView
             android:id="@+id/item_doctor_availability"
+            style="@style/AppTheme.Title.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/AppTheme.Title.Medium"
+            android:text="Next Available"
             android:textColor="@color/green"
-            tools:text="Next Available"
-            app:layout_constraintTop_toTopOf="@id/item_doctor_book_button"
             app:layout_constraintBottom_toTopOf="@id/item_doctor_time"
-            app:layout_constraintStart_toStartOf="@id/item_doctor_photo" />
+            app:layout_constraintStart_toStartOf="@id/item_doctor_photo"
+            app:layout_constraintTop_toTopOf="@id/item_doctor_book_button"
+            tools:text="Next Available" />
 
         <TextView
             android:id="@+id/item_doctor_time"
-            style="@style/AppTheme.Title.Medium"
+            style="@style/AppTheme.Title.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="10:00"
             android:textColor="@color/gray"
             app:layout_constraintBottom_toBottomOf="@+id/item_doctor_book_button"
             app:layout_constraintStart_toStartOf="@id/item_doctor_photo"
@@ -110,19 +131,20 @@
             android:id="@+id/item_doctor_day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="AM tomorrow"
             android:layout_marginStart="@dimen/four_dips"
-            app:layout_constraintTop_toTopOf="@id/item_doctor_time"
+            android:text="AM tomorrow"
             app:layout_constraintBottom_toBottomOf="@id/item_doctor_time"
-            app:layout_constraintStart_toEndOf="@id/item_doctor_time" />
+            app:layout_constraintStart_toEndOf="@id/item_doctor_time"
+            app:layout_constraintTop_toTopOf="@id/item_doctor_time"
+            tools:text="AM tomorrow" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/item_doctor_book_button"
             style="@style/AppTheme.Button.Small"
             android:text="@string/book_now_button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/spacer"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/spacer" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

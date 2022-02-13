@@ -3,6 +3,7 @@
     <dimen name="zero_dips">0dp</dimen>
     <dimen name="two_dips">2dp</dimen>
     <dimen name="four_dips">4dp</dimen>
+    <dimen name="six_dips">6dp</dimen>
     <dimen name="eight_dips">8dp</dimen>
     <dimen name="twelve_dips">12dp</dimen>
     <dimen name="sixteen_dips">16dp</dimen>
