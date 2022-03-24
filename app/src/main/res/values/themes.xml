@@ -48,25 +48,22 @@
     </style>
 
     <style name="AppTheme.Title" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="fontFamily">@font/rubik_medium</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/dark_gray</item>
     </style>
 
     <style name="AppTheme.Title.Large" parent="AppTheme.Title">
-        <item name="fontFamily">@font/rubik_medium</item>
-        <item name="android:textColor">@color/dark_gray</item>
         <item name="android:textSize">24sp</item>
     </style>
 
     <style name="AppTheme.Title.Medium" parent="AppTheme.Title">
-        <item name="fontFamily">@font/rubik_medium</item>
-        <item name="android:textColor">@color/dark_gray</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="AppTheme.Title.Small" parent="AppTheme.Title">
-        <item name="fontFamily">@font/rubik_medium</item>
-        <item name="android:textColor">@color/dark_gray</item>
         <item name="android:textSize">16sp</item>
     </style>
 
@@ -116,8 +113,6 @@
     <style name="AppTheme.TextButton.Large.Gray" parent="AppTheme.TextButton.Large">
         <item name="android:textColor">@color/gray</item>
     </style>
-
-
 
 
 </resources>

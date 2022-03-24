@@ -7,18 +7,23 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.AuthStepLoginFragment"
+        android:name="com.flaviosf.digitaldoctor.feature.auth.view.fragment.AuthStepLoginFragment"
         android:label="loginFragment"
         tools:layout="@layout/fragment_auth_step_login">
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_search_doctor_nav_graph"
+            app:destination="@id/search_doctor_nav_graph" />
     </fragment>
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.flaviosf.digitaldoctor.ui.auth.fragment.AuthStepSignUpFragment"
+        android:name="com.flaviosf.digitaldoctor.feature.auth.view.fragment.AuthStepSignUpFragment"
         android:label="signUpFragment"
-        tools:layout="@layout/fragment_auth_step_sign_up" />
+        tools:layout="@layout/fragment_auth_step_sign_up">
+    </fragment>
+    <include app:graph="@navigation/doctor_nav_graph" />
 
 </navigation>

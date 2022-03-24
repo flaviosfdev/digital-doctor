@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.flaviosf.digitaldoctor">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,19 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.search.doctor.SearchDoctorActivity"
+            android:name="com.flaviosf.digitaldoctor.feature.profile.view.SetupProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.search.SearchActivity"
+            android:name="com.flaviosf.digitaldoctor.feature.doctor.view.DoctorActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.onboarding.OnboardingActivity"
+            android:name="com.flaviosf.digitaldoctor.feature.onboarding.view.OnboardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.auth.AuthActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.splash_screen.SplashActivity"
+            android:name="com.flaviosf.digitaldoctor.feature.auth.view.AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.flaviosf.digitaldoctor.feature.splash.view.SplashActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

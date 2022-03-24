@@ -12,12 +12,12 @@
     <color name="light_green">#C6EFE5</color>
     <color name="dark_green">#107A60</color>
     <color name="gray">#677294</color>
+    <color name="tranparent_gray">#99677294</color>
     <color name="light_gray">#858EA9</color>
     <color name="dark_gray">#333333</color>
     <color name="red">#FF0000</color>
     <color name="yellow">#F6D060</color>
     <color name="transparent">#00FFFFFF</color>
-    <color name="shadow_card">#32000000</color>
-
+    <color name="background_card_button_camera">#32000000</color>
 
 </resources>

@@ -29,7 +29,7 @@
 
     <string name="forgot_password_title">Forgot password</string>
     <string name="forgot_password_description">Enter your email for the verification proccesss, we will send 4 digits code to your email.</string>
-    <string name="forgot_password_continue">Continue</string>
+    <string name="button_continue">Continue</string>
 
     <string name="reset_password_title">Reset Password</string>
     <string name="reset_password_description">Set the new password for your account so you can login and access all the features.</string>
@@ -39,7 +39,14 @@
     <string name="book_now_button">Book Now</string>
 
     <string name="search_hint">Search</string>
-
     <string name="label_no_result_found">No Result Found</string>
+
+    <string name="setup_profile_title">Set up your profile</string>
+    <string name="setup_profile_description">Update your profile to connect your doctor with better impression.</string>
+    <string name="setup_profile_form_title">Personal information</string>
+    <string name="setup_profile_form_name_hint">Name</string>
+    <string name="setup_profile_form_phone_hint">Contact Number</string>
+    <string name="setup_profile_form_date_of_birth_hint">Date of birth</string>
+    <string name="setup_profile_form_location_hint">Location</string>
 
 </resources>

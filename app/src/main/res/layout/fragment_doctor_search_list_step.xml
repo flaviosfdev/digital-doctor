@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_application"
+    tools:context=".feature.doctor.view.fragment.SearchDoctorStepListFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_doctor_input_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixteen_dips"
+        android:layout_marginStart="@dimen/sixteen_dips"
+        android:layout_marginEnd="@dimen/sixteen_dips"
+        android:hint="@string/search_hint"
+
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="@dimen/eight_dips"
+        app:boxCornerRadiusBottomStart="@dimen/eight_dips"
+        app:boxCornerRadiusTopEnd="@dimen/eight_dips"
+        app:boxCornerRadiusTopStart="@dimen/eight_dips"
+        app:boxStrokeWidth="@dimen/zero_dips"
+        app:endIconDrawable="@drawable/ic_clear"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_doctor_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_doctor_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dips"
+        android:layout_marginTop="@dimen/twenty_four_dips"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_doctor_search_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_doctor_input_layout"/>
+
+    <ImageView
+        android:id="@+id/no_result_found_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_result"
+        app:layout_constraintTop_toBottomOf="@id/search_doctor_input_layout"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

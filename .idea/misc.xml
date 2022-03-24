@@ -6,20 +6,30 @@
         <entry key="app/src/main/res/drawable-v24/ic_check.xml" value="0.37948717948717947" />
         <entry key="app/src/main/res/drawable/bg_botton_dialog.xml" value="0.171875" />
         <entry key="app/src/main/res/drawable/bg_botton_dialog_top_bar.xml" value="0.225" />
+        <entry key="app/src/main/res/drawable/bg_change_photo_button.xml" value="0.3288888888888889" />
         <entry key="app/src/main/res/drawable/bg_dialog.xml" value="0.37135416666666665" />
+        <entry key="app/src/main/res/drawable/bg_profile_top.xml" value="0.3288888888888889" />
+        <entry key="app/src/main/res/drawable/bg_text.xml" value="0.1955" />
         <entry key="app/src/main/res/drawable/bg_top_bar_botton_dialog.xml" value="0.37135416666666665" />
+        <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.3288888888888889" />
         <entry key="app/src/main/res/drawable/ic_favorite.xml" value="0.3288888888888889" />
         <entry key="app/src/main/res/drawable/ic_favorite_border.xml" value="0.3288888888888889" />
         <entry key="app/src/main/res/drawable/ic_favorite_selector.xml" value="0.3288888888888889" />
         <entry key="app/src/main/res/drawable/ic_logo.xml" value="0.1935185185185185" />
+        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3151111111111111" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3692708333333333" />
-        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.18153153153153154" />
+        <entry key="app/src/main/res/layout/activity_onboarding.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_search2.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/activity_search_doctor.xml" value="0.2759259259259259" />
+        <entry key="app/src/main/res/layout/activity_setup_profile.xml" value="0.35765765765765767" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24444444444444444" />
+        <entry key="app/src/main/res/layout/fragment_auth_dialog_forgot_password.xml" value="0.3193693693693694" />
+        <entry key="app/src/main/res/layout/fragment_auth_dialog_reset_password.xml" value="0.3193693693693694" />
+        <entry key="app/src/main/res/layout/fragment_auth_step_login.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_dialog_forgot_password.xml" value="0.175" />
         <entry key="app/src/main/res/layout/fragment_dialog_reset_password.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/fragment_doctor_search_list_step.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_doctors_list.xml" value="0.2740740740740741" />
         <entry key="app/src/main/res/layout/fragment_doctors_list_step.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_forgot_password_dialog.xml" value="0.25" />
@@ -34,7 +44,9 @@
         <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/layout/fragment_step_login.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/layout/fragment_step_sign_up.xml" value="0.3193693693693694" />
+        <entry key="app/src/main/res/layout/item_doctor_search_list.xml" value="0.33" />
         <entry key="app/src/main/res/layout/item_search_doctor.xml" value="0.2740740740740741" />
+        <entry key="app/src/main/res/layout/item_search_doctor_list.xml" value="0.3193693693693694" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1927927927927928" />
       </map>
     </option>
